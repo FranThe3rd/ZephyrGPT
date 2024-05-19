@@ -159,10 +159,10 @@
 
 }
 
-.home-what-card h4{
+.home-what-card h4 {
     padding-top: 10px;
     border-top: 1px solid white;
-    width: 70px;    
+    width: 70px;
     font-family: Poppins, sans-serif;
     color: white;
     font-weight: 600;
@@ -178,32 +178,101 @@
     text-align: left;
 }
 
+.home-future {
+    margin: 0 auto;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 150px;
+}
+
+.home-future-one h1 {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    margin: 0;
+    padding: 20px;
+    background: -moz-linear-gradient(left, purple, red);
+    background: -webkit-linear-gradient(left, purple, red);
+    background: linear-gradient(to right, purple, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+
+}
+
+.home-future-one p {
+    font-family: Poppins, sans-serif;
+    color: rgb(255, 0, 136);
+    font-weight: 200;
+    font-size: clamp(.8rem, 2vw, 1rem);
+    margin: 0;
+    padding: 20px;
+}
+
+.home-future-two p {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: clamp(.6rem, 2vw, .7rem);
+    margin: 0;
+    padding: 20px;
+    display: none;
+    padding: 20px;
+
+}
+
+.home-future-two h3 {
+    width: 60%;
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.home-future-three p {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: clamp(.6rem, 2vw, .7rem);
+    margin: 0 auto;
+    padding: 20px;
+
+
+}
+
 @media screen and (max-width: 845px) {
     .home-grid {
         grid-template-columns: 1fr;
     }
+
     .home-header-img img {
 
         margin-top: 10px;
         max-width: 400px;
         width: 80%;
-    
+
     }
-    
+
 
     .home-icons {
-        padding-top: 50px;}
+        padding-top: 50px;
+    }
 
-        .home-header-text h1 {
-            background: -moz-linear-gradient(left, red, purple);
-            background: -webkit-linear-gradient(left, red, purple);
-            background: linear-gradient(to right, red, purple);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin: 0;
-            font-weight: 600;
-        }
-    
+    .home-header-text h1 {
+        background: -moz-linear-gradient(left, red, purple);
+        background: -webkit-linear-gradient(left, red, purple);
+        background: linear-gradient(to right, red, purple);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+        font-weight: 600;
+    }
+
 }
 
 
@@ -211,9 +280,22 @@
     .home-what-grid {
         grid-template-columns: 1fr;
     }
+    .home-future {
+        grid-template-columns: 1fr;
+    }
+
+    .home-future-two p {
+        display: block;
+    }
+
+    .home-future-three {
+        display: none;
+    }
+
+    .home-future-two h3 {
+        width: 80%;
+    }
+    
 
 
 }
-
-
-
