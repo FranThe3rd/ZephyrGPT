@@ -64,12 +64,27 @@
  font-weight: 400;
  color: white;
  text-decoration: none;
+ transition: all 0.3s ease-in-out 0s;
 }
+
+.nav-elements ul a:hover{
+    color: red;
+   }
 
 .nav-sign {
     background-color: rgba(235, 0, 0, 0.91);
     padding: 10px;
-    border-radius: 5px
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out 0s;
+    color: white;
+
+}
+
+.nav-sign:hover {
+    background-color: rgba(255, 255, 255, 0.788);
+    padding: 10px;
+    border-radius: 5px;
+
 }
 
 

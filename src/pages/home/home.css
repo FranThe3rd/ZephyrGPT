@@ -101,6 +101,83 @@
     margin-top: 0px;
 }
 
+
+.home-icons {
+    padding-top: 150px;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.home-icons svg {
+    color: grey;
+    cursor: pointer;
+    opacity: 0.3;
+
+}
+
+.home-what {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 150px;
+    background: radial-gradient(circle at 10% 20%, rgb(108, 17, 17) 0%, rgb(242, 14, 14) 90%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding-bottom: 50px;
+
+}
+
+.home-what h1 {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: clamp(1.5rem, 3vw, 3.55rem);
+    margin: 0;
+    padding: 20px;
+}
+
+.home-what h3 {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: clamp(.8rem, 3vw, 1rem);
+    margin: 0;
+    padding: 20px;
+    width: 80%;
+}
+
+.home-what-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.home-what-card {
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+.home-what-card h4{
+    padding-top: 10px;
+    border-top: 1px solid white;
+    width: 70px;    
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: clamp(1rem, 3vw, 1rem);
+
+}
+
+.home-what-card p {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: clamp(.9rem, 2vw, 1rem);
+    text-align: left;
+}
+
 @media screen and (max-width: 845px) {
     .home-grid {
         grid-template-columns: 1fr;
@@ -113,6 +190,30 @@
     
     }
     
+
+    .home-icons {
+        padding-top: 50px;}
+
+        .home-header-text h1 {
+            background: -moz-linear-gradient(left, red, purple);
+            background: -webkit-linear-gradient(left, red, purple);
+            background: linear-gradient(to right, red, purple);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            font-weight: 600;
+        }
+    
 }
+
+
+@media screen and (max-width: 820px) {
+    .home-what-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
 
 
