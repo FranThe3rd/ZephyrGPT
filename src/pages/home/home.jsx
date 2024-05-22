@@ -96,7 +96,7 @@ const Home = () => {
           <div className='home-blog-main'>
             <img src={mainImg} alt="" />
             <div className='home-blog-main-overlay'>
-              <h3>May 22, 2024</h3>
+              <h3>May 31, 2024</h3>
               <p>Discover how ZephyrGPT is transforming the way we interact, offering intelligent, context-aware responses that enhance communication.</p>
               <h5>Read Full Article</h5>
             </div>
@@ -116,7 +116,7 @@ const Home = () => {
           <div className='home-blog-sub2'>
             <img src={sub2Img} alt="" />
             <div className='home-blog-sub2-overlay'>
-              <h3>May 22, 2024</h3>
+              <h3>May 19, 2024</h3>
               <p>Harnessing the Wind: How ZephyrGPT Revolutionizes AI Conversations</p>
               <h5>Read Full Article</h5>
             </div>
@@ -124,7 +124,7 @@ const Home = () => {
           <div className='home-blog-sub3'>
             <img src={sub3Img} alt="" />
             <div className='home-blog-sub3-overlay'>
-              <h3>May 22, 2024</h3>
+              <h3>May 26, 2024</h3>
               <p>From Concept to Reality: The Development Journey of ZephyrGPT</p>
               <h5>Read Full Article</h5>
             </div>
@@ -132,7 +132,7 @@ const Home = () => {
           <div className='home-blog-sub4'>
             <img src={sub4Img} alt="" />
             <div className='home-blog-sub4-overlay'>
-              <h3>May 22, 2024</h3>
+              <h3>May 29, 2024</h3>
               <p>Enhancing User Experience with ZephyrGPT: Tips and Best Practices
               </p>
               <h5>Read Full Article</h5>
