@@ -11,6 +11,8 @@ import sub2Img from '../../assets/sub2.png'
 import sub3Img from '../../assets/sub3.png'
 import sub4Img from '../../assets/sub4.png'
 
+import Footer from '../../components/footer/footer'
+
 
 const Home = () => {
   return (
@@ -142,8 +144,7 @@ const Home = () => {
 
         </div>
       </div>
-
-
+      <Footer />
     </div>
   )
 }
