@@ -30,11 +30,9 @@ const Navbar = () => {
                             <NavLink onClick={handleShowNavbar} to="/">Home</NavLink>
                         </li>
                         <li>
-                            <NavLink onClick={handleShowNavbar} to="/shop">OpenAI</NavLink>
+                            <NavLink onClick={handleShowNavbar} to="/discover">Discover</NavLink>
                         </li>
-                        <li>
-                            <NavLink onClick={handleShowNavbar} to="/contact">Case Studies</NavLink>
-                        </li>
+                        
                         <li>
                         <NavLink onClick={handleShowNavbar} to="/contact">Library</NavLink>
 
@@ -45,7 +43,7 @@ const Navbar = () => {
                             
                         </li>
                         <li>
-                        <NavLink onClick={handleShowNavbar} to="/contact">Sign In</NavLink>
+                        <NavLink onClick={handleShowNavbar} to="/contact">Log In</NavLink>
 
                             
                         </li>

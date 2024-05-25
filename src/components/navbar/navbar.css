@@ -27,6 +27,7 @@
  border-radius: 1px;
  transition: all 0.3s ease 0s;
  color: white;
+ z-index: 9999999;
 }
 
 

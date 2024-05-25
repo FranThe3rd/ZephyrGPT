@@ -1,0 +1,121 @@
+.discover {
+    width: 100%;
+    height: 100%;
+    background: -moz-radial-gradient(circle at 3% 25%, rgba(83, 0, 19, 1) 0%, rgba(4, 12, 24, 1) 25%);
+    background: -webkit-radial-gradient(circle at 3% 25%, rgba(83, 0, 19, 1) 0%, rgba(4, 12, 24, 1) 25%);
+    background: radial-gradient(circle at 3% 25%, rgba(83, 0, 19, 1) 0%, rgba(4, 12, 24, 1) 25%);
+    padding-bottom: 75px;
+    min-height: 1080px;
+}
+
+.loadingImg {
+    margin: 0 auto;
+    max-width: 400px;
+    display: block;
+    grid-column: span 3;
+
+}
+
+.discover-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 3.55rem);
+    background: -moz-linear-gradient(left, red, purple);
+    background: -webkit-linear-gradient(left, red, purple);
+    background: linear-gradient(to right, red, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.articles {
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+
+
+}
+
+.article {
+    max-width: 400px;
+    background: rgba(110, 7, 7, 0.2);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out; 
+    opacity: 0;
+    margin: 0 auto;
+}
+
+.article.active {
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: forwards;
+
+
+    
+}
+
+
+
+.article:hover {
+    
+    transform: translateY(-10px);
+}
+
+.article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article h1 {
+    font-size: clamp(0.9rem, 1.8vw, 1.53rem);
+    font-weight: 600;
+    margin-top: 10px;
+    color: white;
+}
+
+
+.article p {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    color: white;
+    margin-top: 10px;
+}
+
+.article a {
+    display: block;
+    background: #ff00007b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+.article a:hover {
+    background: #ff0000;
+}
+
+@media screen and (max-width: 1024px) {
+    .articles {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .articles {
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}

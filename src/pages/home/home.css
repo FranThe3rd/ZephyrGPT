@@ -77,7 +77,7 @@
 }
 
 .home-header-img img {
-
+    animation: fadeIn 1s ease-in-out;
     max-width: 750px;
     width: 100%;
 
