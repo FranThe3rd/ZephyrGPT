@@ -34,7 +34,7 @@ const Navbar = () => {
                         </li>
                         
                         <li>
-                        <NavLink onClick={handleShowNavbar} to="/contact">Library</NavLink>
+                        <NavLink onClick={handleShowNavbar} to="/libraries">Libraries</NavLink>
 
                         </li>
                         <li>

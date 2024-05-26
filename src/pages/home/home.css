@@ -553,6 +553,7 @@
         flex-direction: column;
         padding: 10px;
         border-radius: 0;
+        padding-bottom: 20px;
     }
 
     .home-register-text h1 {

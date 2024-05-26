@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar/navbar'
 import './discover.css'
 import axios from 'axios'
 import loadingImg from '../../assets/loading.gif'
+import Footer from '../../components/footer/footer'
 
 const Discover = () => {
   const [loading, setLoading] = useState(true)
@@ -32,7 +33,7 @@ const Discover = () => {
 */
 
 useEffect(() => {
-  const delay = 1000; // 1 second delay
+  const delay = 500; // 0.5 second delay
 
   const timer = setTimeout(() => {
     // Your code to run after the delay
@@ -175,7 +176,7 @@ useEffect(() => {
 return (
   <div className='discover'>
     <Navbar />
-    <h1 className='discover-title'> Disover News On The AI Revolution</h1>
+    <h1 className='discover-title'> Discover News On The AI Revolution</h1>
 
     <div className='articles'>
       {loading ? <img className='loadingImg' src={loadingImg}></img> : data.map((article, index) => {
@@ -188,6 +189,7 @@ return (
           </div>
         )
       })}
+
     </div>
 
   </div>

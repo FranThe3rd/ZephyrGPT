@@ -1,0 +1,73 @@
+.libraries {
+    width: 100%;
+    height: 100%;
+    background: -moz-radial-gradient(circle at 3% 25%, rgba(83, 0, 19, 1) 0%, rgba(4, 12, 24, 1) 25%);
+    background: -webkit-radial-gradient(circle at 3% 25%, rgba(83, 0, 19, 1) 0%, rgba(4, 12, 24, 1) 25%);
+    background: radial-gradient(circle at 3% 25%, rgba(83, 0, 19, 1) 0%, rgba(4, 12, 24, 1) 25%);
+    padding-bottom: 50px;
+}
+
+.library-title {
+    text-align: center;
+    padding-top: 50px;
+    font-size: clamp(1.5rem, 3vw, 3.55rem);
+    background: -moz-linear-gradient(left, red, purple);
+    background: -webkit-linear-gradient(left, red, purple);
+    background: linear-gradient(to right, red, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.library-container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.library-container h2 {
+    margin-top: 40px;
+    text-align: left;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.library-container h3 {
+    text-align: left;
+    font-size: 1.2rem;
+    font-size: clamp(.8rem, 3vw, 1.2rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.library-container code {
+    max-width: 700px;
+    color: white;
+    background-color: rgba(128, 8, 8, 0.5);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: clamp(0.5rem, 2vw, 1.0rem);
+}
+
+
+.library-container ul {
+    color: rgb(255, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+
+.library-container li {
+    cursor: pointer;
+    font-size: clamp(.8rem, 3vw, 1.2rem);
+    margin-bottom: 10px;
+}
+
+.library-container a {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
