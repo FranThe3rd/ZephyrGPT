@@ -23,6 +23,8 @@
 .library-container {
     margin: 0 auto;
     width: 80%;
+    animation: fadeIn 1s ease-in-out;
+
 }
 
 .library-container h2 {
@@ -70,4 +72,10 @@
 .library-container a {
     text-decoration: none;
     color: rgb(255, 0, 0);
+    transition: all ease-in-out 0.3s;
+}
+
+.library-container a:hover {
+    text-decoration: none;
+    color: rgb(142, 23, 23);
 }

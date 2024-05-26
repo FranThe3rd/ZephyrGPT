@@ -61,7 +61,7 @@ const chatComp = await zephyrgpt.chat.complete.create({
                     <li> <a href="https://github.com/Azure/azure-sdk-for-go/tree/main/sdk/ai/azopenai" target='_blank'>Azure ZephyrGPT client library for Go</a></li>
                 </ul>
                 <h2>Community libraries</h2>
-                <h3>The libraries below are built and maintained by the broader developer community. If you'd like to add a new library here, please follow the instructions in our <a href="https://help.openai.com/en/articles/6684216-how-can-i-add-my-api-client-to-the-community-libraries-page" target='_blank'> help center</a> article on adding community libraries. You can also <a href="https://github.com/openai/openai-openapi" target='_blank'>watch our OpenAPI specification</a>  repository on GitHub to get timely updates on when we make changes to our API.</h3>
+                <h3>The libraries below are built and maintained by the broader developer community. If you'd like to add a new library here, please follow the instructions in our <a href="https://help.openai.com/en/articles/6684216-how-can-i-add-my-api-client-to-the-community-libraries-page" target='_blank'> help center</a> article on adding community libraries. You can also <a href="https://github.com/openai/openai-openapi" target='_blank'>watch our ZephyrGPT specification</a>  repository on GitHub to get timely updates on when we make changes to our API.</h3>
                 <h3>Please note that ZephyrGPT does not verify the correctness or security of these projects. Use them at your own risk!</h3>
                 <h2>C++</h2>
                 <ul>
