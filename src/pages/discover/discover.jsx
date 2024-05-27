@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../../components/navbar/navbar'
 import './discover.css'
 import axios from 'axios'
-import loadingImg from '../../assets/loading.gif'
+import loadingImg from '../../assets/loading.png'
 import Footer from '../../components/footer/footer'
 
 const Discover = () => {

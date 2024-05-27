@@ -10,7 +10,7 @@
 
 .loadingImg {
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 300px;
     display: block;
     grid-column: span 3;
 
