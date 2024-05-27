@@ -11,7 +11,7 @@ const Discover = () => {
   /** 
 
   const [articles, setArticles] = useState([])
-  const API_KEY = process.env.REACT_APP_API_KEY
+  const API_KEY = process.env.REACT_NEWS_API_KEY
 
   useEffect(() => {
     const fetchData = async () => {
@@ -37,7 +37,7 @@ useEffect(() => {
 
   const timer = setTimeout(() => {
     // Your code to run after the delay
-    console.log('Delayed action after 1 second');
+    console.log('Delayed action after 0.5 second');
     setLoading(false);
 
   }, delay);

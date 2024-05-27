@@ -38,7 +38,7 @@ const Navbar = () => {
 
                         </li>
                         <li>
-                        <NavLink onClick={handleShowNavbar} to="/contact">Live Demo</NavLink>
+                        <NavLink onClick={handleShowNavbar} to="/chatbot">Live Demo</NavLink>
 
                             
                         </li>
@@ -50,7 +50,7 @@ const Navbar = () => {
                         <li>
                         <NavLink className='nav-sign' onClick={handleShowNavbar} to="/contact">Sign Up</NavLink>
 
-                            
+  
                         </li>
                     
                     </ul>

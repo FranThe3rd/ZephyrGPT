@@ -1,0 +1,33 @@
+.chatbot {
+    width: 100%;
+    height: 100%;
+    background: -moz-radial-gradient(circle at 3% 25%, rgba(83, 0, 19, 1) 0%, rgba(4, 12, 24, 1) 25%);
+    background: -webkit-radial-gradient(circle at 3% 25%, rgba(83, 0, 19, 1) 0%, rgba(4, 12, 24, 1) 25%);
+    background: radial-gradient(circle at 3% 25%, rgba(83, 0, 19, 1) 0%, rgba(4, 12, 24, 1) 25%);
+    min-height: 1080px;
+    padding-bottom: 75px;
+}
+
+.centered-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.title {
+    animation: fadeIn 2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.5rem, 4vw, 3.9rem);
+    background: -moz-linear-gradient(left, red, purple);
+    background: -webkit-linear-gradient(left, red, purple);
+    background: linear-gradient(to right, red, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    text-align: left ;
+    margin: 0 auto;
+}
