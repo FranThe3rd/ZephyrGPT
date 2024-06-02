@@ -4,6 +4,8 @@ import './discover.css'
 import axios from 'axios'
 import loadingImg from '../../assets/loading.png'
 import Footer from '../../components/footer/footer'
+import { ThreeDots } from 'react-loader-spinner'
+
 
 const Discover = () => {
   const [loading, setLoading] = useState(true)
@@ -33,12 +35,14 @@ const Discover = () => {
 */
 
 useEffect(() => {
-  const delay = 500; // 0.5 second delay
+  const delay = 700; // 0.7 second delay
 
   const timer = setTimeout(() => {
     // Your code to run after the delay
-    console.log('Delayed action after 0.5 second');
+    console.log('Delayed action after 0.7 second');
     setLoading(false);
+
+    
 
   }, delay);
 
@@ -179,7 +183,16 @@ return (
     <h1 className='discover-title'> Discover News On The AI Revolution</h1>
 
     <div className='articles'>
-      {loading ? <img className='loadingImg' src={loadingImg}></img> : data.map((article, index) => {
+      {loading ? <ThreeDots
+  visible={true}
+  height="300"
+  width="300"
+  color="#8B0000  "
+  radius="9"
+  ariaLabel="three-dots-loading"
+  wrapperStyle={{}}
+  wrapperClass="loadingDiscover"
+  />: data.map((article, index) => {
         return (
           <div className='article active' key={index}>
             <img src={article.urlToImage} alt={article.title} />

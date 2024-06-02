@@ -8,11 +8,18 @@
     padding-bottom: 75px;
 }
 
-.loadingImg {
-    margin: 0 auto;
-    max-width: 300px;
-    display: block;
-    grid-column: span 3;
+.loadingDiscover{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
 
 }
 

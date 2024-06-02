@@ -4,6 +4,17 @@ body {
     background: radial-gradient(circle at 3% 25%, rgba(83, 0, 19, 1) 0%, rgba(4, 12, 24, 1) 25%);
 }
 
+.hidden {
+  opacity: 0;
+  transition: ease-in-out 2s;
+}
+
+.show {
+  opacity: 1;
+}
+ 
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
