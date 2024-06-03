@@ -43,12 +43,12 @@ const Navbar = () => {
                             
                         </li>
                         <li>
-                        <NavLink onClick={handleShowNavbar} to="/contact">Log In</NavLink>
+                        <NavLink onClick={handleShowNavbar} >Log In</NavLink>
 
                             
                         </li>
                         <li>
-                        <NavLink className='nav-sign' onClick={handleShowNavbar} to="/contact">Sign Up</NavLink>
+                        <NavLink className='nav-sign' onClick={handleShowNavbar} >Sign Up</NavLink>
 
   
                         </li>
