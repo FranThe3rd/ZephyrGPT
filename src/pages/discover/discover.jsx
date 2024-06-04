@@ -35,11 +35,11 @@ const Discover = () => {
 */
 
 useEffect(() => {
-  const delay = 700; // 0.7 second delay
+  const delay = 900; // 0.9 second delay
 
   const timer = setTimeout(() => {
     // Your code to run after the delay
-    console.log('Delayed action after 0.7 second');
+    console.log('Delayed action after 0.9 second');
     setLoading(false);
 
     
