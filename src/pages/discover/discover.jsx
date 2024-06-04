@@ -4,7 +4,7 @@ import './discover.css'
 import axios from 'axios'
 import loadingImg from '../../assets/loading.png'
 import Footer from '../../components/footer/footer'
-import { ThreeDots } from 'react-loader-spinner'
+import { Triangle } from 'react-loader-spinner'
 
 
 const Discover = () => {
@@ -183,13 +183,12 @@ return (
     <h1 className='discover-title'> Discover News On The AI Revolution</h1>
 
     <div className='articles'>
-      {loading ? <ThreeDots
+      {loading ? <Triangle
   visible={true}
-  height="300"
-  width="300"
+  height="150"
+  width="150"
   color="#8B0000  "
-  radius="9"
-  ariaLabel="three-dots-loading"
+  ariaLabel="triangle-loading"
   wrapperStyle={{}}
   wrapperClass="loadingDiscover"
   />: data.map((article, index) => {
