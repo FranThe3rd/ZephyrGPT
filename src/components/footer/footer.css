@@ -18,6 +18,12 @@
 
 }
 
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+}
+
 .footer button {
     margin: 0 auto;
     display: block;
@@ -31,6 +37,8 @@
     margin-top: 50px;
     font-family: Poppins, sans-serif;
     transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
 
 
 }
@@ -77,20 +85,19 @@
     margin-bottom: 5px;
     color: white;
     font-family: Poppins, sans-serif;
+    cursor: pointer;
 
 
 }
 
-.footer-grid-item ul li a {
-    color: white;
-    text-decoration: none;
-    font-family: Poppins, sans-serif;
-
-}
-
-.footer-grid-item ul li a:hover {
+.footer-grid-item ul li:hover {
     text-decoration: underline;
+    cursor: pointer;
+
 }
+
+
+
 
 
 @media screen and (max-width: 768px) {

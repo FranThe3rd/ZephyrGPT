@@ -12,9 +12,36 @@ import sub3Img from '../../assets/sub3.png'
 import sub4Img from '../../assets/sub4.png'
 
 import Footer from '../../components/footer/footer'
+import { NavLink } from 'react-router-dom'
+import { useEffect } from 'react'
 
 
 const Home = () => {
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('slideRight');
+        } else {
+          entry.target.classList.remove('slideRight');
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll('.noSlideRight');
+    hiddenElements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => {
+      hiddenElements.forEach((element) => {
+        observer.unobserve(element);
+      });
+    };
+  }, []);
+
+
   return (
     <div className='home'>
       <Navbar />
@@ -23,21 +50,32 @@ const Home = () => {
           <h1>amazing with ZephyrGPT</h1>
           <h3>ZephyrGPT delivers unmatched intelligence and personalized responses, adapting seamlessly to your style. Enjoy secure, engaging conversations anytime with its user-friendly interface. Experience the future of AI interactions with ZephyrGPT.</h3>
           <input type="text" name="" id="" placeholder='Your Email Address' />
-          <button>Get Started</button>
+          <NavLink to='/chatbot'>
+            <button>Get Started</button>
+          </NavLink>
           <div className='home-people-div'>
             <img className='home-people' src={people} alt="" />
             <p>1,600 people requested access in the last 24hr</p>
           </div>
         </div>
         <div className='home-header-img'>
-          <img src={ai} alt="" />
+          <img className='noSlideRight' src={ai} alt="" />
         </div>
       </div>
       <div className='home-icons'>
-        <InstagramLogo size={30} />
-        <TwitterLogo size={30} />
-        <DiscordLogo size={30} />
-        <FacebookLogo size={30} />
+        <NavLink to='https://github.com/FranThe3rd' target='_blank'>
+          <InstagramLogo size={30} />
+        </NavLink>
+        <NavLink to='https://github.com/FranThe3rd' target='_blank'>
+          <TwitterLogo size={30} />
+        </NavLink>
+        <NavLink to='https://github.com/FranThe3rd' target='_blank'>
+          <DiscordLogo size={30} />
+        </NavLink>
+        <NavLink to='https://github.com/FranThe3rd' target='_blank'>
+          <FacebookLogo size={30} />
+        </NavLink>
+
       </div>
 
       <div className='home-what'>
@@ -89,7 +127,9 @@ const Home = () => {
           <p>Request Early Access and Get Early Access to ZephyrGPT</p>
           <h1>Join the Future of AI Conversations</h1>
         </div>
-        <button>Get Started</button>
+        <NavLink to='/chatbot'>
+          <button>Get Started</button>
+        </NavLink>
       </div>
       <div className='home-blog'>
         <h1> Alot is happening, </h1>

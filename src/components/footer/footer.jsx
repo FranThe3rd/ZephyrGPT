@@ -1,11 +1,14 @@
 import React from 'react'
 import './footer.css'
+import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <div className='footer'>
         <h1>Do You Want To Get Access Before Everyone Else</h1>
+        <NavLink to='/chatbot'>
         <button>Request Early Access</button>
+        </NavLink>
         <div className='footer-grid'>
             <div className='footer-grid-item'>
                 <h2>Company</h2>
