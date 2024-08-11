@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { ArrowUp } from 'phosphor-react';
 import { ThreeDots } from 'react-loader-spinner'
+import ReactMarkdown from 'react-markdown'
+
 
 
 
@@ -129,7 +131,7 @@ export const Chatbot = () => {
                         wrapperClass="message-loading"
                         />
                     ) : (
-                        <p >{chatbotResponse}</p>
+                        <ReactMarkdown>{chatbotResponse}</ReactMarkdown>
                     )}
                 </div>
             </div>
