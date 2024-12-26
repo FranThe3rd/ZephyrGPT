@@ -8,6 +8,7 @@
 
 .container-nav {
  max-width: 1700px;
+ width: 95%;
  margin: 0 auto;
  padding: 0 15px;
  display: flex;
